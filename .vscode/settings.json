@@ -1,0 +1,8 @@
+{
+    "hdinsightJobSumission.ClusterConf": [
+        {
+            "name": "glaprod",
+            "filePath": "c:\\Users\\mozernickz\\Desktop\\hql.hql"
+        }
+    ]
+}
