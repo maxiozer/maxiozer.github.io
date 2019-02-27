@@ -75,7 +75,7 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
+        const siteTitle = "Maximiliano Ozernickz"
         const siteDescription = "Site description"
 
         return (
@@ -89,7 +89,7 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
+                            <h2>Maximiliano Ozernickz<br />
                             magna sed accumsan arcu neque.</h2>
                         </header>
                         <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
