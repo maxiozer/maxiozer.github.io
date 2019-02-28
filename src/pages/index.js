@@ -134,20 +134,9 @@ class HomeIndex extends React.Component {
                     <title>{siteTitle}</title>
                     <meta name="description" content={siteDescription} />
                 </Helmet>
-
                 <div id="main">
-
-                    <section id="one">
-                        <header className="major">
-                            <h2>Maximiliano David Ozernickz</h2>
-                        </header>
-                        <p>I dedicate myself to building high traffic applications, with the main focus being to improve the performance and user experience by using the best development and UI practices.
-My biggest motivation is to help people improve their personal drive for achievement, so they can later on apply it on their professional skills and attitude growth.
-My years of work taught me how and when to properly evaluate and decide which would be the best technology to use, how to commit professionally with clients, and to manage different contingencies efficiently.</p>
-                    </section>
-
                     <section id="two">
-                        <h2>Experience</h2>
+                        <h2>Professional Experience</h2>
 
                         <Experience images={EXPERIENCE.map(({ src, thumbnail, caption, description, dates }) => ({
                             src,
