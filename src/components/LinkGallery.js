@@ -17,9 +17,9 @@ class LinkGallery extends Component {
 
         const gallery = images.map((obj, i) => {
             return (
-                <article className="4u 8u$(xsmall) work-item" key={i}>
+                <article className="3u 8u$(xsmall) work-item" key={i}>
                     <a
-                        className="image fit"
+                        className="image fit experience"
                         href={obj.src}
                         target="__blank"
                     >

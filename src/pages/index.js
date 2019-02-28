@@ -18,26 +18,30 @@ const EXPERIENCE = [
     { 
         thumbnail: logoAndreani, 
         caption: 'Andreani Logistica', 
-        dates: "2018- 2018",
-        description: 'Descripcion del puesto' 
+        dates: "Mar 2014 - Present",
+        src: "http://www.andreani.com",
+        description: "Started as Full-Stack developer, later as Technical leader and now Data Engineer. I was in charge of most strategical products to diferent business divisions."
     },
     { 
         thumbnail: logoVirtuacom, 
         caption: 'Virtuacom', 
-        dates: "2018- 2018",
-        description: 'Descripcion del puesto' 
+        src: "http://www.virtuacom.net/",
+        dates: "Apr 2013 - Oct 2013",
+        description: 'I was in charge of the maintenance of a Multi-tenant application to different e-commerce business. Using the best OOP practices and methodologies.' 
     },
     { 
         thumbnail: logoVida, 
-        caption: 'Grupo Vida', 
-        dates: "2018- 2018",
-        description: 'Descripcion del puesto' 
+        caption: 'Grupo Vida (Infobae)', 
+        dates: "Oct 2011 - Mar 2013",
+        src: "http://www.grupovi-da.com/",
+        description: 'I was in charge of the maintenance of an eBooks e-commerce platform. Now it is the most important e-book seller in Argentina.' 
     },
     { 
         thumbnail: logoDDM, 
         caption: 'DDM', 
-        dates: "2018- 2018",
-        description: 'Descripcion del puesto' 
+        dates: "Jun 2010 - Oct 2011",
+        src: "http://ddm.com.ar/en/",
+        description: 'I was in charge of the maintenance of the company´s CMS.' 
     }
 ];
 
