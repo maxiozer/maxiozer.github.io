@@ -63,7 +63,7 @@ const Projects = [
     { 
         thumbnail: logoTiendas, 
         caption: 'Tiendas Andreani', 
-        src: "http://www.tiendasandreani.com",
+        src: null,
         description: "Multi-tenant eCommerce platform. It has been the first step of the company in the e-commerce business.",
         links:[]
     },
