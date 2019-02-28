@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import cv from "../assets/pdf/Maximiliano-David-Ozernickz-CV.pdf"
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Project from '../components/Project'
 import Experience from '../components/Experience'
 
@@ -14,6 +14,7 @@ import logoDDM from '../assets/images/thumbs/ddm.png'
 import logoBajalibros from "../assets/images/thumbs/bajalibros.jpg";
 import logoMobile from "../assets/images/thumbs/andreani-mobile.png";
 import logoTiendas from "../assets/images/thumbs/tiendas andreani.jpg";
+import logoOrt from "../assets/images/thumbs/logo-ort.jpg";
 
 
 const EXPERIENCE = [
@@ -22,7 +23,7 @@ const EXPERIENCE = [
         caption: 'Andreani Logistica', 
         dates: "Mar 2014 - Present",
         src: "http://www.andreani.com",
-        description: "Started as Full-Stack developer, later as Technical leader and now Data Engineer. I was in charge of most strategical products to diferent business divisions."
+        description: "Started as Full-Stack developer, after as Technical leader and now Data Engineer. I was in charge of most strategical products to diferent business divisions."
     },
     { 
         thumbnail: logoVirtuacom, 
@@ -53,10 +54,10 @@ const Projects = [
         thumbnail: logoMobile,
         caption: 'Andreani Mobile', 
         src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
-        description: "A software solution who follows the activity of 3600 distributors. I led the entire process of development and release with 5 people in my charge. Also, this software was used for different government administrations to manage their election processes.",
+        description: "A software solution who follows the activity of 3600 distributors. I led the entire process of development and release with 5 people in my charge. Also, this software was used for different provinces administrations to manage their election processes.",
         links: [
             {iconClass: "icon far fa-youtube", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: " Youtube demo"},
-            {iconClass: "icon fas fa-link", href: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile", description: " Press"},
+            {iconClass: "icon fas fa-link", href: "https://www.enretail.com/2017/08/25/andreani-mobile-una-revolucion-en-la-logistica", description: " Press"},
             
         ]
     },
@@ -78,6 +79,23 @@ const Projects = [
     },
 ];
 
+const Education = [
+    { 
+        thumbnail: logoOrt, 
+        caption: 'ORT Insititute - Software Analyst', 
+        dates: "2012 - 2015",
+        src: "http://www.ort.edu.ar/informacion-terciario",
+        description: ""
+    },
+    { 
+        thumbnail: logoOrt, 
+        caption: 'ORT High School - Technical diploma - Information Technology and digital media', 
+        dates: "2005 - 2009",
+        src: "http://www.ort.edu.ar",
+        description: ""
+    },
+];
+
 class HomeIndex extends React.Component {
 
     constructor() {
@@ -88,40 +106,6 @@ class HomeIndex extends React.Component {
             currentImage: 0,
         };
 
-        this.closeLightbox = this.closeLightbox.bind(this);
-        this.gotoNext = this.gotoNext.bind(this);
-        this.gotoPrevious = this.gotoPrevious.bind(this);
-        this.openLightbox = this.openLightbox.bind(this);
-        this.handleClickImage = this.handleClickImage.bind(this);
-    }
-
-    openLightbox(index, event) {
-        event.preventDefault();
-        this.setState({
-            currentImage: index,
-            lightboxIsOpen: true,
-        });
-    }
-    closeLightbox() {
-        this.setState({
-            currentImage: 0,
-            lightboxIsOpen: false,
-        });
-    }
-    gotoPrevious() {
-        this.setState({
-            currentImage: this.state.currentImage - 1,
-        });
-    }
-    gotoNext() {
-        this.setState({
-            currentImage: this.state.currentImage + 1,
-        });
-    }
-    handleClickImage() {
-        if (this.state.currentImage === this.props.images.length - 1) return;
-
-        this.gotoNext();
     }
 
     render() {
@@ -161,40 +145,15 @@ class HomeIndex extends React.Component {
 
 
                     <section id="four">
-                        <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-                        <div className="row">
-                            <div className="8u 12u$(small)">
-                                <form method="post" action="#">
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                                    </div>
-                                </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div>
-                            <div className="4u 12u$(small)">
-                                <ul className="labeled-icons">
-                                    <li>
-                                        <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
-                                        United States
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h2>Education</h2>
+                        <Experience images={Education.map(({ src, thumbnail, caption, description, dates }) => ({
+                            src,
+                            thumbnail,
+                            caption,
+                            description,
+                            dates
+                        }))} />
+                        <a href={cv} target="__blank" className="button">Get CV</a>
                     </section>
 
                 </div>
