@@ -1,6 +1,6 @@
 import React from 'react'
 
-const cv = "../assets/pdf/Maximiliano-David-Ozernickz-CV.pdf"
+import cv from "../assets/pdf/Maximiliano-David-Ozernickz-CV.pdf"
 
 class Footer extends React.Component {
     render() {

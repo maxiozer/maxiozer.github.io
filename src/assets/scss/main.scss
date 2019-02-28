@@ -452,8 +452,8 @@
 
 		&:before {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
-			background: url('images/overlay.png');
 			border-radius: _size(border-radius);
+			border: 1px solid #dce0db;
 			content: '';
 			display: block;
 			height: 100%;
@@ -472,7 +472,6 @@
 				border-radius: _size(border-radius);
 				border: solid 3px rgba(255,255,255,0.5);
 				color: #fff;
-				content: 'View';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: _font(weight-bold);
@@ -490,12 +489,14 @@
 
 			&:hover {
 				&:after {
-					opacity: 1.0;
+					opacity: 0.1;
+					background-color: gray;
+
 				}
 
 				&:before {
-					background: url('images/overlay.png'), url('images/overlay.png');
-					opacity: 1.0;
+					background-color: gray;
+					opacity: 0.1
 				}
 			}
 		}
@@ -901,9 +902,9 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		_palette(accent2, bg);
+		background-color:	#303f9f;
 		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
+		background-image:		url('images/overlay.png');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto 100%;
@@ -935,7 +936,7 @@
 		}
 
 		h1 {
-			color: _palette(accent2, fg);
+			color: _palette(accent2, mo);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -943,7 +944,7 @@
 
 		.image.avatar {
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 6.25em;
+			width: 10.25em;
 		}
 	}
 
