@@ -17,9 +17,9 @@ class Experience extends Component {
 
         const gallery = images.map((obj, i) => {
             return (
-                <article className="3u 8u$(xsmall) work-item" key={i}>
+                <article className="4u 24u$(xsmall) work-item" key={i}>
                     <a
-                        className="image fit experience"
+                        className="image fit"
                         href={obj.src}
                         target="__blank"
                     >

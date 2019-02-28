@@ -17,7 +17,7 @@ class Project extends Component {
 
         const gallery = images.map((obj, i) => {
             return (
-                <article className="3u 8u$(xsmall) work-item" key={i}>
+                <article className="4u 8u$(xsmall) work-item" key={i}>
                     <a
                         className="image fit Project"
                         href={obj.src}
@@ -29,7 +29,9 @@ class Project extends Component {
                     <h3>{obj.caption}</h3>
                     <p>{obj.description}</p>
                     {obj.links.map(link => 
-                        <a href={link.href} target="__blank" className={link.iconClass}>{link.description}</a>
+                        <p>
+                            <a href={link.href} target="__blank" className={link.iconClass}>{link.description}</a>
+                        </p>
                     )}
                 </article>
             );

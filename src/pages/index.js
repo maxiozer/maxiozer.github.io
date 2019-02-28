@@ -11,8 +11,10 @@ import logoAndreani from '../assets/images/thumbs/Logo-Andreani.jpg'
 import logoVirtuacom from '../assets/images/thumbs/Virtuacom.png'
 import logoVida from '../assets/images/thumbs/vi-da.png'
 import logoDDM from '../assets/images/thumbs/ddm.png'
+import logoBajalibros from "../assets/images/thumbs/bajalibros.jpg";
+import logoMobile from "../assets/images/thumbs/andreani-mobile.png";
+import logoTiendas from "../assets/images/thumbs/tiendas andreani.jpg";
 
-import full01 from '../assets/images/fulls/01.jpg'
 
 const EXPERIENCE = [
     { 
@@ -48,28 +50,31 @@ const EXPERIENCE = [
 
 const Projects = [
     { 
-        thumbnail: logoAndreani, 
+        thumbnail: logoMobile,
         caption: 'Andreani Mobile', 
         src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
-        description: "A software solution who follows the activity of 3000 distributors. I led the entire process of development and release with 5 people in my charge.",
+        description: "A software solution who follows the activity of 3600 distributors. I led the entire process of development and release with 5 people in my charge. Also, this software was used for different government administrations to manage their election processes.",
         links: [
-            {iconClass: "icon fab fa-youtube", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: "Youtube demo"},
-            {iconClass: "icon far fa-file-alt", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: "Press"},
+            {iconClass: "icon far fa-youtube", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: " Youtube demo"},
+            {iconClass: "icon fas fa-link", href: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile", description: " Press"},
+            
         ]
     },
     { 
-        thumbnail: logoAndreani, 
+        thumbnail: logoTiendas, 
         caption: 'Tiendas Andreani', 
-        src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
-        description: "",
+        src: "http://www.tiendasandreani.com",
+        description: "Multi-tenant eCommerce platform. It has been the first step of the company in the e-commerce business.",
         links:[]
     },
     { 
-        thumbnail: logoAndreani, 
+        thumbnail: logoBajalibros, 
         caption: 'Bajalibros.com', 
-        src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
-        description: "",
-        links:[]
+        src: "https://www.bajalibros.com/",
+        description: "BajaLibros is the most important e-book seller in Argentina. I participated in the release and maintenance of the Full-Stack solution.",
+        links:[
+            {iconClass: "icon fas fa-link", href: "https://www.bajalibros.com/", description: " www.bajalibros.com"},
+        ]
     },
 ];
 
@@ -153,7 +158,7 @@ My years of work taught me how and when to properly evaluate and decide which wo
                         }))} />
                     </section>
 
-                   {/*<section id="three">
+                   <section id="three">
                         <h2>Projects</h2>
 
                         <Project images={Projects.map(({ src, thumbnail, caption, description, links }) => ({
@@ -163,7 +168,7 @@ My years of work taught me how and when to properly evaluate and decide which wo
                             description,
                             links
                         }))} />
-                    </section>*/}
+                    </section>
 
 
                     <section id="four">
