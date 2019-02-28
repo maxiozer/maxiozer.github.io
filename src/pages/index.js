@@ -3,8 +3,8 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
-import Gallery from '../components/Gallery'
-import LinkGallery from '../components/LinkGallery'
+import Project from '../components/Project'
+import Experience from '../components/Experience'
 
 
 import logoAndreani from '../assets/images/thumbs/Logo-Andreani.jpg'
@@ -43,6 +43,34 @@ const EXPERIENCE = [
         src: "http://ddm.com.ar/en/",
         description: 'I was in charge of the maintenance of the company´s CMS.' 
     }
+];
+
+
+const Projects = [
+    { 
+        thumbnail: logoAndreani, 
+        caption: 'Andreani Mobile', 
+        src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
+        description: "A software solution who follows the activity of 3000 distributors. I led the entire process of development and release with 5 people in my charge.",
+        links: [
+            {iconClass: "icon fab fa-youtube", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: "Youtube demo"},
+            {iconClass: "icon far fa-file-alt", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: "Press"},
+        ]
+    },
+    { 
+        thumbnail: logoAndreani, 
+        caption: 'Tiendas Andreani', 
+        src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
+        description: "",
+        links:[]
+    },
+    { 
+        thumbnail: logoAndreani, 
+        caption: 'Bajalibros.com', 
+        src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
+        description: "",
+        links:[]
+    },
 ];
 
 class HomeIndex extends React.Component {
@@ -116,7 +144,7 @@ My years of work taught me how and when to properly evaluate and decide which wo
                     <section id="two">
                         <h2>Experience</h2>
 
-                        <LinkGallery images={EXPERIENCE.map(({ id, src, thumbnail, caption, description, dates }) => ({
+                        <Experience images={EXPERIENCE.map(({ src, thumbnail, caption, description, dates }) => ({
                             src,
                             thumbnail,
                             caption,
@@ -125,7 +153,20 @@ My years of work taught me how and when to properly evaluate and decide which wo
                         }))} />
                     </section>
 
-                    <section id="three">
+                   {/*<section id="three">
+                        <h2>Projects</h2>
+
+                        <Project images={Projects.map(({ src, thumbnail, caption, description, links }) => ({
+                            src,
+                            thumbnail,
+                            caption,
+                            description,
+                            links
+                        }))} />
+                    </section>*/}
+
+
+                    <section id="four">
                         <h2>Get In Touch</h2>
                         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
                         <div className="row">

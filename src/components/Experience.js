@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
 
-class LinkGallery extends Component {
+class Experience extends Component {
     constructor () {
         super();
 
@@ -48,9 +48,9 @@ class LinkGallery extends Component {
     }
 }
 
-LinkGallery.displayName = 'Gallery';
-LinkGallery.propTypes = {
+Experience.displayName = 'Gallery';
+Experience.propTypes = {
     images: PropTypes.array
 };
 
-export default LinkGallery;
+export default Experience;
