@@ -100,8 +100,7 @@ const Education = [
 
 class HomeIndex extends React.Component {
 
-    constructor() {
-        super();
+    componetDidMount(){
         ReactGA.initialize('UA-135456994-1');
         ReactGA.pageview(window.location.pathname + window.location.search);
         var urlParams = new URLSearchParams(window.location.search);
