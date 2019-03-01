@@ -12,6 +12,7 @@
     "node-sass": "^4.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-ga": "^2.5.7",
     "react-helmet": "^5.2.0",
     "react-images": "^0.5.19"
   },
@@ -24,7 +25,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && echo maxiozer.com > public/CNAME && gh-pages -d public -b master"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",

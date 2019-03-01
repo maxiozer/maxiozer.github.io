@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Lightbox from 'react-images';
+import ReactGA from 'react-ga';
 
 class Project extends Component {
     constructor () {
@@ -10,6 +10,13 @@ class Project extends Component {
         };
 
     }
+
+    registerEvent = (label) => ReactGA.event({
+        category: 'Projects',
+        action: 'link',
+        label: label
+    });
+
     renderGallery () {
         const { images } = this.props;
 
@@ -22,15 +29,16 @@ class Project extends Component {
                         className="image fit Project"
                         href={obj.src}
                         target="__blank"
+                        onClick={this.registerEvent.bind(this, obj.src)}
                     >
-                        <img src={obj.thumbnail} />
+                        <img alt={obj.caption}  src={obj.thumbnail} />
                     </a>
 
                     <h3>{obj.caption}</h3>
                     <p>{obj.description}</p>
                     {obj.links.map(link => 
                         <p>
-                            <a href={link.href} target="__blank" className={link.iconClass}>{link.description}</a>
+                            <a onClick={this.registerEvent.bind(this, link.href)} href={link.href} target="__blank" className={link.iconClass}>{link.description}</a>
                         </p>
                     )}
                 </article>

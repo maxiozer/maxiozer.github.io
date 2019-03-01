@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Lightbox from 'react-images';
+import ReactGA from 'react-ga';
 
 class Experience extends Component {
     constructor () {
@@ -10,6 +10,12 @@ class Experience extends Component {
         };
 
     }
+    registerEvent = (label) => ReactGA.event({
+        category: 'Experience',
+        action: 'link',
+        label: label
+    });
+
     renderGallery () {
         const { images } = this.props;
 
@@ -22,6 +28,7 @@ class Experience extends Component {
                         className="image fit"
                         href={obj.src}
                         target="__blank"
+                        onClick={this.registerEvent.bind(this, obj.src)}
                     >
                         <img src={obj.thumbnail} />
                     </a>
