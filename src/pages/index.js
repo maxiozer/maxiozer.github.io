@@ -56,7 +56,7 @@ const Projects = [
         thumbnail: logoMobile,
         caption: 'Andreani Mobile',
         src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
-        description: "A software solution who follows the activity of 3600 distributors. I led the entire process of development and release with 5 people in my charge. Also, this software was used for different provinces administrations to manage their election processes.",
+        description: "A software solution to follow the activity of 3600 distributors. I led the entire process of development and release with 5 people in my charge. Also, this software was used for different provinces administrations to manage their election processes.",
         links: [
             { iconClass: "icon far fa-youtube", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: " Youtube demo" },
             { iconClass: "icon fas fa-link", href: "https://www.enretail.com/2017/08/25/andreani-mobile-una-revolucion-en-la-logistica", description: " Press" },
@@ -98,19 +98,20 @@ const Education = [
     },
 ];
 
-class HomeIndex extends React.Component {
+ReactGA.initialize('UA-135456994-1');
+ReactGA.pageview("/");
 
-    componetDidMount(){
-        ReactGA.initialize('UA-135456994-1');
-        ReactGA.pageview(window.location.pathname + window.location.search);
-        var urlParams = new URLSearchParams(window.location.search);
+class HomeIndex extends React.Component {
+    constructor(props){
+        super(props);
+        let params = decodeURLParams(props.location.search);
         ReactGA.event({
             category: 'General',
             action: 'ref',
-            label: urlParams.get('ref') || ""
+            label: params.ref || ""
         });
     }
-
+    
     registerEventCV = () => ReactGA.event({
             category: 'General',
             action: 'Buttons',
@@ -172,5 +173,23 @@ class HomeIndex extends React.Component {
         )
     }
 }
+
+const decodeURLParams = search => {
+    const hashes = search.slice(search.indexOf("?") + 1).split("&");
+    return hashes.reduce((params, hash) => {
+        const split = hash.indexOf("=");
+
+        if (split < 0) {
+            return Object.assign(params, {
+                [hash]: null
+            });
+        }
+
+        const key = hash.slice(0, split);
+        const val = hash.slice(split + 1);
+
+        return Object.assign(params, { [key]: decodeURIComponent(val) });
+    }, {});
+};
 
 export default HomeIndex

@@ -30,7 +30,7 @@ class Experience extends Component {
                         target="__blank"
                         onClick={this.registerEvent.bind(this, obj.src)}
                     >
-                        <img src={obj.thumbnail} />
+                        <img alt={obj.caption} src={obj.thumbnail} />
                     </a>
 
                     <h3>{obj.caption}</h3>
