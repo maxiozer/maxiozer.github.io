@@ -102,7 +102,7 @@ ReactGA.initialize('UA-135456994-1');
 ReactGA.pageview("/");
 
 class HomeIndex extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         let params = decodeURLParams(props.location.search);
         ReactGA.event({
@@ -111,13 +111,13 @@ class HomeIndex extends React.Component {
             label: params.ref || ""
         });
     }
-    
+
     registerEventCV = () => ReactGA.event({
-            category: 'General',
-            action: 'Buttons',
-            label: "Get CV"
-        });
-    
+        category: 'General',
+        action: 'Buttons',
+        label: "Get CV"
+    });
+
 
     render() {
         const siteTitle = "Maximiliano David Ozernickz"
@@ -164,7 +164,9 @@ class HomeIndex extends React.Component {
                             description,
                             dates
                         }))} />
-                        <a href={cv} onClick={this.registerEventCV} target="__blank" className="button">Get CV</a>
+                        <p>
+                            <a href={cv} onClick={this.registerEventCV} target="__blank" className="button">Get CV</a>
+                        </p>
                     </section>
 
                 </div>

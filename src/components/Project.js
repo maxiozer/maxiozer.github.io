@@ -36,9 +36,9 @@ class Project extends Component {
 
                     <h3>{obj.caption}</h3>
                     <p>{obj.description}</p>
-                    {obj.links.map(link => 
-                        <p>
-                            <a onClick={this.registerEvent.bind(this, link.href)} href={link.href} target="__blank" className={link.iconClass}>{link.description}</a>
+                    {obj.links.map((link,i) => 
+                        <p key={i}>
+                            <a  onClick={this.registerEvent.bind(this, link.href)} href={link.href} target="__blank" className={link.iconClass}>{link.description}</a>
                         </p>
                     )}
                 </article>
