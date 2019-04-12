@@ -13,6 +13,7 @@ import logoVirtuacom from '../assets/images/thumbs/Virtuacom.png'
 import logoVida from '../assets/images/thumbs/vi-da.png'
 import logoDDM from '../assets/images/thumbs/ddm.png'
 import logoBajalibros from "../assets/images/thumbs/bajalibros.jpg";
+import logoElections from "../assets/images/thumbs/elections.jpg";
 import logoMobile from "../assets/images/thumbs/andreani-mobile.png";
 import logoTiendas from "../assets/images/thumbs/tiendas andreani.jpg";
 import logoOrt from "../assets/images/thumbs/logo-ort.jpg";
@@ -56,12 +57,19 @@ const Projects = [
         thumbnail: logoMobile,
         caption: 'Andreani Mobile',
         src: "https://www.andreani.com/noticia/140/implementamos-el-sistema-de-distribucion-mobile",
-        description: "A software solution to follow the activity of 3600 distributors. I led the entire process of development and release with 5 people in my charge. Also, this software was used for different provinces administrations to manage their election processes.",
+        description: "A software solution to follow the activity of 3600 distributors on the street. I led the entire process of development and release with 5 people in my charge.",
         links: [
             { iconClass: "icon far fa-youtube", href: "https://www.youtube.com/watch?v=VYFCNWKxyCQ", description: " Youtube demo" },
             { iconClass: "icon fas fa-link", href: "https://www.enretail.com/2017/08/25/andreani-mobile-una-revolucion-en-la-logistica", description: " Press" },
 
         ]
+    },
+    {
+        thumbnail: logoElections,
+        caption: 'General Elections Solution',
+        src: null,
+        description: "Based on Andreani Mobile, this software consolidates the polling stations results across the province, validates them using AI and shows real-time results. It has been used by different Argentinian provinces such as Chaco, Cordoba and San Luis.",
+        links: []
     },
     {
         thumbnail: logoTiendas,
