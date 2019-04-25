@@ -26,14 +26,14 @@ const EXPERIENCE = [
         caption: 'Andreani Logistics',
         dates: "Mar 2014 - Present",
         src: "http://www.andreani.com",
-        description: "I started as Full-Stack developer, then Technical leader and now Data Engineer. I was in charge of most strategical products to different business divisions."
+        description: "I started as Full-Stack developer, then Technical leader and now Data Engineer. I was in charge of most strategical products for different business divisions."
     },
     {
         thumbnail: logoVirtuacom,
         caption: 'Virtuacom',
         src: "http://www.virtuacom.net/",
         dates: "Apr 2013 - Oct 2013",
-        description: 'I was in charge of the maintenance of a Multi-tenant application to different e-commerce business. Using the best OOP practices and methodologies.'
+        description: 'I was in charge of the maintenance of a Multi-tenant application to different e-commerce business using the best OOP practices and methodologies.'
     },
     {
         thumbnail: logoVida,
@@ -72,13 +72,6 @@ const Projects = [
         links: []
     },
     {
-        thumbnail: logoTiendas,
-        caption: 'Tiendas Andreani',
-        src: null,
-        description: "Multi-tenant eCommerce platform. It has been the first step of the company in the e-commerce business.",
-        links: []
-    },
-    {
         thumbnail: logoBajalibros,
         caption: 'Bajalibros.com',
         src: "https://www.bajalibros.com/",
@@ -87,6 +80,13 @@ const Projects = [
             { iconClass: "icon fas fa-link", href: "https://www.bajalibros.com/", description: " www.bajalibros.com" },
         ]
     },
+    {
+        thumbnail: logoTiendas,
+        caption: 'Tiendas Andreani',
+        src: null,
+        description: "Multi-tenant eCommerce platform. It has been the first step of the company in the e-commerce business.",
+        links: []
+    }
 ];
 
 const Education = [
