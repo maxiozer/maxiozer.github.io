@@ -209,7 +209,7 @@
 
 	header {
 		p {
-			color: _palette(fg-light);
+			color: _palette(bg);
 			position: relative;
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
 		}
@@ -902,7 +902,7 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:	#303f9f;
+		background-color:	#0d47a1;
 		background-attachment:	scroll,								fixed;
 		background-image:		url('images/overlay.png');
 		background-position:	top left,							top left;
@@ -955,7 +955,7 @@
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 
 			a {
-				color: _palette(accent2, fg-light);
+				color: _palette(accent2, fg);
 			}
 		}
 
