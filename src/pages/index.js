@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import cv from "../assets/pdf/Maximiliano-David-Ozernickz-CV.pdf"
 import ReactGA from 'react-ga';
-import { hotjar } from 'react-hotjar';
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
@@ -21,7 +20,6 @@ import logoOrt from "../assets/images/thumbs/logo-ort.jpg";
 
 ReactGA.initialize('UA-135456994-1');
 ReactGA.pageview("/");
-hotjar.initialize(1435377);
 
 const EXPERIENCE = [
     {
