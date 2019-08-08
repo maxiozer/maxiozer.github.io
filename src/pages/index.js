@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import cv from "../assets/pdf/Maximiliano-David-Ozernickz-CV.pdf"
 import ReactGA from 'react-ga';
+import { hotjar } from 'react-hotjar';
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
@@ -18,7 +19,9 @@ import logoMobile from "../assets/images/thumbs/andreani-mobile.png";
 import logoTiendas from "../assets/images/thumbs/tiendas andreani.jpg";
 import logoOrt from "../assets/images/thumbs/logo-ort.jpg";
 
-
+ReactGA.initialize('UA-135456994-1');
+ReactGA.pageview("/");
+hotjar.initialize(1435377);
 
 const EXPERIENCE = [
     {
@@ -106,8 +109,6 @@ const Education = [
     },
 ];
 
-ReactGA.initialize('UA-135456994-1');
-ReactGA.pageview("/");
 
 class HomeIndex extends React.Component {
     constructor(props) {
@@ -128,8 +129,8 @@ class HomeIndex extends React.Component {
 
 
     render() {
-        const siteTitle = "Maximiliano David Ozernickz"
-        const siteDescription = "Senior Full-Stack web developer and Technical Leader"
+        const siteTitle = "Maximiliano Ozernickz"
+        const siteDescription = "Data Engineer, Senior Full-Stack Web Developer & Technical Leader."
 
         return (
             <Layout>
