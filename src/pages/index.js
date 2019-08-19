@@ -17,6 +17,7 @@ import logoElections from "../assets/images/thumbs/elections.jpg";
 import logoMobile from "../assets/images/thumbs/andreani-mobile.png";
 import logoTiendas from "../assets/images/thumbs/tiendas andreani.jpg";
 import logoOrt from "../assets/images/thumbs/logo-ort.jpg";
+import { hotjar } from 'react-hotjar';
 
 ReactGA.initialize('UA-135456994-1');
 ReactGA.pageview("/");
@@ -109,6 +110,10 @@ const Education = [
 
 
 class HomeIndex extends React.Component {
+    componentDidMount(){
+        hotjar.initialize(1435377);
+    }
+
     constructor(props) {
         super(props);
         let params = decodeURLParams(props.location.search);

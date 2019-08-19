@@ -1,0 +1,8 @@
+{
+    "defaultContext": {
+        "account": "datalakepa",
+        "database": "stg",
+        "schema": "dbo"
+    },
+    "scripts": []
+}
