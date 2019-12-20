@@ -17,6 +17,7 @@ import logoElections from "../assets/images/thumbs/elections.jpg";
 import logoMobile from "../assets/images/thumbs/andreani-mobile.png";
 import logoTiendas from "../assets/images/thumbs/tiendas andreani.jpg";
 import logoOrt from "../assets/images/thumbs/logo-ort.jpg";
+import logoItc from "../assets/images/thumbs/itc.jpg";
 import { hotjar } from 'react-hotjar';
 
 ReactGA.initialize('UA-135456994-1');
@@ -93,19 +94,19 @@ const Projects = [
 
 const Education = [
     {
-        thumbnail: logoOrt,
-        caption: 'ORT Insititute - Software Analyst',
-        dates: "2012 - 2015",
-        src: "http://www.ort.edu.ar/informacion-terciario",
-        description: ""
+        thumbnail: logoItc,
+        caption: 'Israel Tech Challenge - Data Science & Machine Learning',
+        dates: "2018 - 2019 (Tel Aviv, Israel)",
+        src: "http://www.itc.tech",
+        description: "A 5-month full-time program focused on Data Science for B.Sc./M.Sc. graduates with experience in coding."
     },
     {
         thumbnail: logoOrt,
-        caption: 'ORT High School - Technical diploma - Information Technology and digital media',
-        dates: "2005 - 2009",
-        src: "http://www.ort.edu.ar",
+        caption: 'ORT Argentina - Software Analyst',
+        dates: "2012 - 2015",
+        src: "http://www.ort.edu.ar/informacion-terciario",
         description: ""
-    },
+    }
 ];
 
 

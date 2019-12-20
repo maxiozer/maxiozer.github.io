@@ -18,6 +18,7 @@ class Footer extends React.Component {
                     <ul className="icons">
                         <li><a onClick={this.registerEvent.bind(this, "Linkedin")} href="https://www.linkedin.com/in/maximilianoozernickz" target="__blank"  rel="noopener noreferrer" className="icon fa-linkedin"></a></li>
                         <li><a onClick={this.registerEvent.bind(this, "CV")} href={cv} target="_blank"  rel="noopener noreferrer"className="icon fa-id-badge"><span className="label">Email</span></a></li>
+                        <li><a onClick={this.registerEvent.bind(this, "Github")} href="http://github.com/maxiozer" target="__blank"  rel="noopener noreferrer" className="icon fa-github"></a></li>
                         <li><a onClick={this.registerEvent.bind(this, "Mail")} href="mailto:maxoozer@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
                     </ul>
                 </div>
