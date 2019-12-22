@@ -27,9 +27,9 @@ const EXPERIENCE = [
     {
         thumbnail: logoAndreani,
         caption: 'Andreani Logistics',
-        dates: "Mar 2014 - Present",
+        dates: "Mar 2014 - Oct 2019",
         src: "http://www.andreani.com",
-        description: "I started as Full-Stack developer, then Technical leader and now Data Engineer. I was in charge of most strategical products for different business divisions."
+        description: "I started as Full-Stack developer, then Technical leader and after that, Data Engineer. I was in charge of most strategical products for different business divisions."
     },
     {
         thumbnail: logoVirtuacom,
