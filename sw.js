@@ -29,7 +29,7 @@ self.__precacheManifest = [
     "url": "webpack-runtime-c5f9191f314ff0070048.js"
   },
   {
-    "url": "commons-b4a9f977f8594a756ed6.js"
+    "url": "commons-7503537fb0a4d3b0dddd.js"
   },
   {
     "url": "app-323a302ac69ddcbfa330.js"
@@ -39,7 +39,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a3d1e99da50eda937ce871170d5aa66f"
+    "revision": "2249b6ce9a220f7f72d0ee34435dca51"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
