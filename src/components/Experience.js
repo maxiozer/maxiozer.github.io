@@ -3,13 +3,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
 class Experience extends Component {
-    constructor () {
-        super();
-
-        this.state = {
-        };
-
-    }
+    
     registerEvent = (label) => ReactGA.event({
         category: 'Experience',
         action: 'link',

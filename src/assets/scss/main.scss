@@ -878,9 +878,10 @@
 
 	.work-item {
 		margin: 0 0 _size(element-margin) 0;
+		height: 19em;
 		
 		.image {
-			margin: 0 0 (_size(element-margin) * 0.75) 0;
+			margin: 0 0 (_size(element-margin) * 0.25) 0;
 		}
 
 		h3 {
@@ -996,7 +997,7 @@
 
 		> section {
 			border-top: solid 2px _palette(border);
-			margin: $size-header-pad 0 0 0;
+			margin: 0 0 0 0;
 			padding: $size-header-pad 0 0 0;
 
 			&:first-child {

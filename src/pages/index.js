@@ -18,12 +18,20 @@ import logoMobile from "../assets/images/thumbs/andreani-mobile.png";
 import logoTiendas from "../assets/images/thumbs/tiendas andreani.jpg";
 import logoOrt from "../assets/images/thumbs/logo-ort.jpg";
 import logoItc from "../assets/images/thumbs/itc.jpg";
+import logoCP from "../assets/images/thumbs/checkpoint.jpg";
 import { hotjar } from 'react-hotjar';
 
 ReactGA.initialize('UA-135456994-1');
 ReactGA.pageview("/");
 
 const EXPERIENCE = [
+    {
+        thumbnail: logoCP,
+        caption: 'CheckPoint Software Technologies',
+        dates: "Mar 2020 - Present",
+        src: "https://www.checkpoint.com/",
+        description: ""
+    },
     {
         thumbnail: logoAndreani,
         caption: 'Andreani Logistics',
