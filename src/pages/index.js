@@ -27,7 +27,7 @@ ReactGA.pageview("/");
 const EXPERIENCE = [
     {
         thumbnail: logoCP,
-        caption: 'CheckPoint Software Technologies',
+        caption: 'Check Point Technologies',
         dates: "Mar 2020 - Present",
         src: "https://www.checkpoint.com/",
         description: ""
