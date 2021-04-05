@@ -13,6 +13,7 @@ import logoDDM from '../assets/images/thumbs/ddm.png'
 import logoBajalibros from '../assets/images/thumbs/bajalibros.jpg'
 import logoElections from '../assets/images/thumbs/elections.jpg'
 import logoMobile from '../assets/images/thumbs/andreani-mobile.png'
+import logoTh from '../assets/images/thumbs/threat-hunting.png'
 import logoTiendas from '../assets/images/thumbs/tiendas andreani.jpg'
 import logoOrt from '../assets/images/thumbs/logo-ort.jpg'
 import logoItc from '../assets/images/thumbs/itc.jpg'
@@ -66,10 +67,10 @@ const EXPERIENCE = [
 
 const Projects = [
   {
-    thumbnail: logoMobile,
+    thumbnail: logoTh,
     caption: 'Threat Hunting',
     src:
-      'https://www.checkpoint.com/cyber-hub/cloud-security/what-is-threat-hunting',
+      'https://sc1.checkpoint.com/documents/Infinity_Portal/WebAdminGuides/EN/SandBlast-Agent-Admin-Guide/Topics-SBA-AG/Threat_Hunting.htm',
     description:
       'An investigative tool to identify and drill down into suspicious incidents in the organization`s endpoints and take remediation actions.',
     links: [
