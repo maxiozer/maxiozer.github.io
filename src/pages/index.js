@@ -18,6 +18,7 @@ import logoTiendas from '../assets/images/thumbs/tiendas andreani.jpg'
 import logoOrt from '../assets/images/thumbs/logo-ort.jpg'
 import logoItc from '../assets/images/thumbs/itc.jpg'
 import logoCP from '../assets/images/thumbs/checkpoint.jpg'
+import logoMonday from '../assets/images/thumbs/monday.jpg'
 import { hotjar } from 'react-hotjar'
 
 ReactGA.initialize('UA-135456994-1')
@@ -25,6 +26,13 @@ ReactGA.pageview('/')
 
 const EXPERIENCE = [
   {
+    thumbnail: logoMonday,
+    caption: 'Monday.com',
+    dates: 'Jan 2022 - Aug 2022',
+    src: 'https://www.monday.com/',
+    description:
+      'In my role as a full-stack developer, I improved multiple admin services and developed features to allow customers to manage multiple users at once using data-driven methodologies and AB tests.',
+  },{
     thumbnail: logoCP,
     caption: 'Check Point Technologies',
     dates: 'Mar 2020 - Present',
