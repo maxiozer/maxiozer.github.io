@@ -31,7 +31,7 @@ const EXPERIENCE = [
     dates: 'Jan 2022 - Aug 2022',
     src: 'https://www.monday.com/',
     description:
-      'In my role as a full-stack developer, I improved multiple admin services and developed features to allow customers to manage multiple users at once using data-driven methodologies and AB tests.',
+      'In my role as a Full-Stack developer, I improved multiple services and developed features to allow customers to manage multiple users at once using data-driven methodologies and AB tests.',
   },{
     thumbnail: logoCP,
     caption: 'Check Point Technologies',
